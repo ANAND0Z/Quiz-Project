@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students Score</title>
+  <script defer src="score.js"></script>
+  <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+  <link rel="stylesheet" href="score.css">
+</head>
+<body>
+  <img class="quiz_logoimg" src="asserts/mainlogo.png" style="width: 100%;height: 100%;">
+
+  <div class="palate">
+    <div class="options">
+      
+      <select class="option fop" id="dept">
+        <option value="">Dept</option>
+        <option value="aids">AIDS</option>
+        <option value="aiml">AIML</option>
+        <option value="bme">BME</option>
+        <option value="csd">CSD</option>
+        <option value="cse">CSE</option>
+        <option value="civil">CIVIL</option>
+        <option value="ece">ECE</option>
+        <option value="eee">EEE</option>
+        <option value="ft">FT</option>
+        <option value="it">IT</option>
+        <option value="mct">MCT</option>
+        <option value="mech">MECH</option>
+      </select>
+
+      <select class="option fiop" id="year">
+        <option value="">Year</option>
+        <option value="i">I Year</option>
+        <option value="ii">II Year</option>
+        <option value="iii">III Year</option>
+        <option value="iv">IV Year</option>
+      </select>
+
+      <select class="option top" id="section">
+        <option value="">SEC</option>
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+        <option value="d">D</option>
+      </select>
+
+      <button class="option fop" id="getsubject">
+        Get subject
+      </button>
+
+      <!-- 🔹 New button added here -->
+      <!--<button class="option fop" id="get_co">
+        Get CO
+      </button>-->
+
+      <select class="option siop" id="subject">
+        <option value="">Subject</option>
+      </select>
+
+      <button class="option saop" id="display_score">
+        Get score
+      </button>
+
+      <button class="option saop" id="submit">
+        Submit
+      </button>
+
+      <button class="option saip" id="Generate">
+        Generate
+      </button>
+      <button class="option fop" id="get_co">
+        Get CO
+      </button>
+    </div>
+  </div>
+
+  <div class="score_det">
+    <div class="scr_tit"><p>Quiz</p></div>
+    <div class="table" id="content">
+      <!-- Table content loads here -->
+    </div>
+  </div>
+</body>
+</html>

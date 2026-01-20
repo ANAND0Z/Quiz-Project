@@ -1,0 +1,249 @@
+body {
+    margin: 0%;
+    padding: 0;
+    background-color: #DEDEDE;
+}
+
+.quiz_logoimg {
+    border: black solid 1px;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 27%;
+    left: 20%;
+}
+
+.logo_img {
+    border: white solid 4px;
+    border-radius: 10px;
+}
+
+.palate {
+    background-color: rgb(189, 189, 189);
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    z-index: -1;
+    border: white solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border-radius: 25px;
+}
+
+.inner_palate {
+    background-color: white;
+    width: 85%;
+    height:80%;
+    border: #4B95DF solid 2px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.inp {
+    background-color: #4B95DF;
+    height: 40px;
+    width: 50%;
+    border: none;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+}
+
+.inp:hover {
+    transform: scale(1.03);
+}
+
+.start {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #FCDF00;
+    border-width: 0;
+    font-family: "Irish Grover", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.start:hover {
+    border-width: 1px;
+    border-color: #000000;
+    transform: scale(1.03);
+}
+
+::placeholder {
+    color: black;
+}
+
+.get_submit_option {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+}
+
+.login_option>a {
+    font-family: "Irish Grover", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+@media(max-width:990px){
+    .logo{
+        height: 150px;
+        width:150px;
+
+    }
+    .title{
+        font-size: 17px;
+    }
+    .palate{
+        height:300px;
+    }
+    .login_option{
+        gap:17%;
+       }
+
+}
+@media(max-width:840px){
+    .logo
+    {
+        top:20%;
+    }
+   .palate{
+      top:35%
+   }
+   .login_option{
+    gap:20%
+   }
+}
+@media(max-width:720px){
+    .palate{
+        width:80%;
+        left:10%;
+    }
+    .logo{
+        left:7%;
+    }
+   .title{
+    font-size: 15px;
+   } 
+   .login_option{
+    gap:25%
+   }
+}
+
+@media(max-width:530px)
+{
+    .logo{
+       height:  100px;
+       width: 100px;
+       left: 5%;
+       top:12%
+    }
+    .palate{
+        width:75%;
+        left:5%;
+        height: 250px;
+        left:12.5%;
+        top:22%
+    }
+    .title{
+        width:40%;
+        font-size: 12px;
+    }
+    .inp{
+          width:70%
+    }
+    .Submit{
+         font-size: 12px;
+         height: 12%;
+    }
+    .login_option{
+        gap:15%;
+    }
+    .login_option>a{
+        font-size:10px ;
+    }
+}
+@media(max-width:380px)
+{
+    .logo{
+        height: 90px;
+        width: 90px;
+    }
+    .logo_img{
+        border:white solid 2px;
+        border-radius: 5px;
+    }
+   
+   
+   
+   
+  
+  
+}
+@media(max-width:300px)
+{
+  .logo{
+    top: 8%;
+    height: 70px;
+    width:70px;
+  }
+  .palate{
+    top:15%;
+    height: 150px;
+    border-radius: 20px;
+  }
+  .inner_palate{
+    border-radius: 20px;
+  }
+
+  .inp{
+    font-size: 8px;
+    width: 50%;
+    height: 25%;
+  }
+  .start{
+    font-size: 8px;
+    width: 50%;
+    height: 150%;
+    border-radius: 5px;
+  }
+  
+}
+@media(max-width:250px)
+{
+    .logo{
+        width: 60px;
+        height:60px;
+    }
+    .title{
+        font-size: 7px;
+        width: 35%;
+    }
+    .Submit{
+        font-size: 5px;
+    }
+    .login_option{
+        gap: 15%;
+    }
+    .login_option>a{
+        font-size: 5px;
+    
+      }
+}
